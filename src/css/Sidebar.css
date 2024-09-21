@@ -1,0 +1,151 @@
+.sidebar {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-btn {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    color: #ff4d4d; /* Optional: color for delete icon */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.delete-btn:hover {
+    color: #d00000; /* Change color on hover */
+}
+
+.add-field-btn,
+.settings-btn,
+.save-publish-btn,
+.align-btn,
+.add-option-btn {
+    background-color: #353636; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 10px; /* Spacing */
+    transition: background-color 0.3s; /* Button hover effect */
+}
+
+/* Button hover effect */
+.add-field-btn:hover,
+.settings-btn:hover,
+.save-publish-btn:hover,
+.align-btn:hover,
+.add-option-btn:hover {
+    background-color: #000000; /* Darker shade on hover */
+}
+
+.fields-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.field-item {
+    padding: 10px; /* Padding for better spacing */
+    margin: 5px 0; /* Spacing between items */
+    border: 1px solid transparent; /* Initial border for hover effect */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect */
+.field-item:hover {
+    background-color: #f0f0f0; 
+    border-color: #007bff; 
+}
+.sidebar-title {
+    font-size: 25px; /* Font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; 
+}
+/* Active state (when clicked) */
+.field-item.active {
+    background-color: #007bff; /* Highlight color when active */
+    color: white; /* Change text color when active */
+}
+
+.field-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+/* .field-item:hover {
+    background-color: #f1f1f1;
+} */
+
+.edit-section {
+    margin-top: 20px;
+}
+
+.form-input,
+.form-textarea,
+.file-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.form-textarea {
+    height: 80px;
+}
+
+.image-preview {
+    margin-top: 10px;
+}
+
+
+.image-align-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.image-align-buttons button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 15%;
+
+}
+
+.image-align-buttons button:hover {
+    background-color: #5a6268;
+}
+
+.dropdown-options {
+    margin-top: 15px;
+}
+
+.dropdown-option-item {
+    display: flex;
+    align-items: center;
+}
+
+.delete-option-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}

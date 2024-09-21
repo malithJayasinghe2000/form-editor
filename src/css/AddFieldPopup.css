@@ -1,0 +1,156 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 400px;
+    max-height: 80vh; /* Set a max height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .popup h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+  }  
+  
+  .popup select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .popup input[type="text"], 
+  .popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .popup textarea {
+    height: 80px;
+  }
+  
+  .popup .options-container {
+    margin-bottom: 15px;
+  }
+  
+  .popup .options-container input {
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 0.95rem;
+  }
+  
+  .popup .options-container button {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .popup .options-container button:hover {
+    background-color: #ff6666;
+  }
+  
+  .popup .add-option-btn, 
+  .popup .submit-btn, 
+  .popup .cancel-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .popup .add-option-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .popup .add-option-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup .submit-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .popup .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  .popup .cancel-btn {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .popup .cancel-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  .options-container {
+    margin-top: 20px; /* Space above the options section */
+  }
+  
+  .options-container div {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space between options */
+  }
+  
+  .options-container input {
+    flex: 1; /* Allow the input to take available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Space between input and buttons */
+  }
+  
+  .options-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .options-container button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .add-option-btn {
+    margin-top: 10px; /* Space above the add option button */
+    background-color: #28a745; /* Different color for Add Option */
+  }
+  
+  .add-option-btn:hover {
+    background-color: #218838; /* Darker shade on hover */
+  }
+  
